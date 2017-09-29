@@ -2,7 +2,8 @@
   What needs to change so that the page says "Go!"?
 */
 
-$(document).ready(function(){
+	$(document).ready(function(){ //CODE TO MAKE IT SAY GO
+  $("h1").text("Go!");
   console.log( "The page says:", $("h1").text() );
 });
 
