@@ -4,6 +4,11 @@ var rick_roll_youtube_embed_code = "<iframe width='420' height='315' src='https:
 
 $(document).ready(function(){
 
+
   $("#time").text( Date.now() );
+  $("form").on("submit", function handleSubmit(event){ // Code to stop submit
+    event.preventDefault();
+    $("body").append(rick_roll_youtube_embed_code);
 
 })
+    });
